@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Online Diary</title>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>  
+</head>
+<body>
+ 
+<p>Date: <input type="text" id="datepicker"></p>
+<p>Entry: <textarea rows="10" cols="80" class="entry"></textarea>
+<div>
+  <span>
+  <button type="button" class="submitButton">Submit</button>
+  <button type="button" class="clearButton">Clear</button>
+  </span>
+</div>
+  <script>
+  $(document).on('ready', function() {
+  	var diaryEntry= "";
+  	var entryDate = "";
+
+	 $( "#datepicker" ).datepicker({
+	 	onSelect: function(date, inst) {
+	    	entryDate = date;
+	   }
+	  });
+  
+    $(".clearButton").on('click', function() {
+      $(".entry").val("");
+    });
+     $(".submitButton").on('click', function() {
+     	diaryEntry = $(".entry").val();
+     	alert(entryDate);
+     	alert(diaryEntry);
+    });
+  });
+   </script>
+</body>
+</html>
