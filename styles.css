@@ -1,0 +1,35 @@
+body {
+	background-image: url('http://i987.photobucket.com/albums/ae351/konaeagle/Captains%20Quill/quill-1.jpg')
+	
+}
+
+h1 {
+	color: #81F7F3;
+}
+
+p {
+	border-top: 15em
+	font-size: 20px;
+	font-weight: 10px;
+	/*color: black*/
+	color:#81F7F3;
+}
+
+#datepicker {
+	background-color: #808080;
+	background: 3px solid;
+	color: #FFE87C;;
+}
+
+.entry {
+	font-style: italic;
+	border: 3px solid;
+	color: #FFE87C;
+	background-color:#808080;
+
+}
+
+.submitButton, .readButton, .clearButton {
+	width:  10em;
+	height:  2em;
+}
